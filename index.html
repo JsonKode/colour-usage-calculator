@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Usage Calculator</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Color Usage Calculator</h1>
+        <input type="text" id="color" placeholder="Enter color name">
+        <input type="number" id="grams" placeholder="Enter amount in grams" min="0">
+        <button onclick="addColorUsage()">Add</button>
+        <button onclick="finishInput()">Finish</button>
+        <button class="reset-btn" onclick="resetCalculator()">Reset</button>
+
+        <div class="output" id="output">
+            <h2>Color Usage:</h2>
+            <table id="usageTable">
+                <tr>
+                    <th>Color</th>
+                    <th>Grams</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="renderer.js"></script>
+</body>
+</html>
